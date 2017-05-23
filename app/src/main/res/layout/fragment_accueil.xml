@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_accueil"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.julien.bts_e4.accueil">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-      >
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/gsb" />
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Appplication developpé par Antoine Aroujo et Julien Hivert
-        "/>
-    </LinearLayout>
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView5"
+            android:text="Développé par José Santiago depuis les sources de Julien H" />
 
-</android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
