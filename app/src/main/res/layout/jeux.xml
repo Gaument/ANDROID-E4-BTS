@@ -9,32 +9,42 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/imageView5"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:srcCompat="@drawable/seventh"
-            android:id="@+id/imageView5"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp" />
+            android:layout_marginTop="22dp"
+            app:srcCompat="@drawable/seventh" />
 
         <Button
-            android:text="Jeu du Pendu"
+            android:id="@+id/btn_pendu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_pendu"
-            android:layout_marginTop="16dp"
             android:layout_below="@+id/imageView5"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Jeu du Pendu" />
 
         <ImageView
+            android:id="@+id/imageView6"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:srcCompat="@drawable/pcc"
-            android:layout_marginTop="21dp"
-            android:id="@+id/imageView6"
-
             android:layout_alignLeft="@+id/imageView5"
-            android:layout_alignStart="@+id/imageView5" />
+            android:layout_alignStart="@+id/imageView5"
+
+            android:layout_below="@+id/btn_pendu"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/pcc" />
+
+        <Button
+            android:id="@+id/btn_shifumi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Shifumi" />
 
 
     </RelativeLayout>

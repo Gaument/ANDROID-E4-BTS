@@ -15,6 +15,7 @@ import android.widget.Button;
  */
 public class Pendu extends Fragment {
     Button jeuPendu;
+    Button jeuPcc;
 
     View rootViews;
 
@@ -35,10 +36,18 @@ public class Pendu extends Fragment {
 
     public void game() {
         jeuPendu = (Button) rootViews.findViewById(R.id.btn_pendu);
+        jeuPcc = (Button) rootViews.findViewById(R.id.btn_shifumi);
         jeuPendu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), PenduActivity.class);
+                startActivity(intent);
+            }
+        });
+        jeuPcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PccActivity.class);
                 startActivity(intent);
             }
         });
