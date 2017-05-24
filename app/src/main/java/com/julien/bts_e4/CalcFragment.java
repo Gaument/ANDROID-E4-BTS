@@ -263,7 +263,7 @@ public class CalcFragment extends Fragment {
     }
 
     //Voici la méthode qui fait le calcul qui a été demandé par l'utilisateur
-    private void calcul(){
+    public void calcul(){
         if(operateur.equals("+")){
             chiffre1 = chiffre1 + Double.valueOf(ecran.getText().toString()).doubleValue();
             ecran.setText(String.valueOf(chiffre1));
