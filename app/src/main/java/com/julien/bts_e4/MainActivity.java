@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragments(new accueil(), "Acueil");
+        viewPagerAdapter.addFragments(new accueil(), "Accueil");
         viewPagerAdapter.addFragments(new Contact(), "Email");
         viewPagerAdapter.addFragments(new Pendu(), "Jeux");
         viewPagerAdapter.addFragments(new CalcFragment(), "Calculatrice");

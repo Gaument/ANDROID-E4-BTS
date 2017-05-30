@@ -212,7 +212,7 @@ public class PenduActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public String generateWord(){
-        String wordList[] = {"INFORMATIQUE", "DEVELOPPEMENT", "ORDINATEUR","RESEAU", "INFRASTRUCTURE", "CONCEPTION"};
+        String wordList[] = {"INFORMATIQUE", "DEVELOPPEMENT", "ORDINATEUR","RESEAU", "INFRASTRUCTURE", "CONCEPTION", "CLAVIER", "SOURIS", "ECRAN", "ANALYSE"};
         Random rand = new Random();
         int nb = 0 + rand.nextInt(5 - 0);
         String word = wordList[nb];

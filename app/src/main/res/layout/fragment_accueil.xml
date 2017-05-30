@@ -22,7 +22,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/imageView5"
-            android:text="Développé par José Santiago depuis les sources de Julien H" />
+            android:gravity="center"
+            android:text="Bienvenue sur l'annuaire de contact du groupe GSB !" />
 
     </RelativeLayout>
 
